@@ -1,0 +1,19 @@
+class Person {
+    String name;
+    int age;
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void show1() {
+        System.out.println("Person Name: " + name + "\nAge: " + age);
+    }
+}
+public class Program3{
+    public static void main(String[] args) {
+        Person p = new Person("Darshan", 21);
+        p.show1();
+    }
+}
