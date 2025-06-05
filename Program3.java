@@ -11,9 +11,24 @@ class Person {
         System.out.println("Person Name: " + name + "\nAge: " + age);
     }
 }
+class Employee extends Person {
+    int empId;
+    Double salary;
+
+    Employee(String name, int age, int empId, Double salary) {
+        super(name, age);
+        this.empId = empId;
+        this.salary = salary;
+    }
+
+    void show1() {
+        super.show1();
+        System.out.println("Employee ID: " + empId + "\salary: " + salary);
+    }
+}
 public class Program3{
     public static void main(String[] args) {
-        Person p = new Person("Darshan", 21);
-        p.show1();
+         Employee e = new Employee("Darshan", 21, 101, 50000.0);
+        e.show1();
     }
 }
